@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<title>ToUCH</title>
+<head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body id="myPage">
+  <div id="page-wrap">
+    <!-- Sidebar on click
+    <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+-->
+
+<!-- Navbar
+<div class="w3-top">
+<div class="w3-bar w3-theme-d2 w3-center-align">
+<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+<a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+<a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+<a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+<a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
+<a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+<div class="w3-dropdown-hover w3-hide-small">
+<button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>
+<div class="w3-dropdown-content w3-card-4 w3-bar-block">
+<a href="#" class="w3-bar-item w3-button">Link</a>
+<a href="#" class="w3-bar-item w3-button">Link</a>
+<a href="#" class="w3-bar-item w3-button">Link</a>
+</div>
+</div>
+<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+</div>
+-->
+
+<!-- Navbar on small screens
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+<a href="#team" class="w3-bar-item w3-button">Team</a>
+<a href="#work" class="w3-bar-item w3-button">Work</a>
+<a href="#pricing" class="w3-bar-item w3-button">Price</a>
+<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+<a href="#" class="w3-bar-item w3-button">Search</a>
+</div>
+</div>
+-->
+
+<!-- Header -->
+<div class="w3-container w3-display-topmiddle w3-margin-bottom">
+  <div class="w3-center w3-text-purple w3-margin-bottom">
+  <h2>ToUCH: Teaching Undergraduates Collaborative and Heterogeneous Computing</h2>
+</div>
+</div>
+
+
+<!-- Modal
+<div id="id01" class="w3-modal">
+<div class="w3-modal-content w3-card-4 w3-animate-top">
+<header class="w3-container w3-teal w3-display-container">
+<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+<h4>Oh snap! We just showed you a modal..</h4>
+<h5>Because we can <i class="fa fa-smile-o"></i></h5>
+</header>
+<div class="w3-container">
+<p>Cool huh? Ok, enough teasing around..</p>
+<p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+</div>
+<footer class="w3-container w3-teal">
+<p>Modal footer</p>
+</footer>
+</div>
+</div>
+-->
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-margin-top" id="team">
+  <div class="w3-row"><br>
+    <div class="w3-third">
+      <a id="knox">
+      <img src="knox-logo.jpg" alt="Knox-Logo" style="width:45%;position: relative;">
+    </a>
+    </div>
+
+    <div class="w3-third">
+      <a id="tsu">
+      <img id="tsu" src="tsu-logo.png" alt="TSU-Logo" style="width:85%;position: relative; margin-top: 5em">
+    </a>
+    </div>
+
+    <div class="w3-third">
+      <a id="conc">
+      <img src="conc-logo.jpg" alt="Conc-Logo" style="width:130%;position: relative">
+    </a>
+    </div>
+  </div>
+</div>
+
+<!-- Work Overview -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+  <div class="w3-content w3-center">
+    <h2>Overview</h2>
+    <p>In keeping with NSF's mission of promoting scientific progress, this project strengthens the workforce of future cyberinfrastructure researchers and professionals by preparing undergraduate students to program and employ heterogeneous computing systems. The need for increased performance per watt and demands of processing diverse workloads have triggered a major industry shift towards systems containing different kinds of specialized components. These heterogeneous architectures are quickly becoming the dominant platform in high-performance computing (HPC), cloud computing, and Internet of Things (IoT) networks. As such, it is imperative that the scientific workforce in advanced cyberinfrastructure have a deep understanding of heterogeneity in computing systems. Current undergraduate computer science curricula lack sufficient coverage of heterogeneous computing concepts and there is an imminent risk that tomorrow's scientific workforce will be ill-equipped to program the complex heterogeneous systems of the future. This project addresses this by developing and disseminating modules covering heterogeneous computing concepts. Module development is complemented with out-of-class training camps that will serve as a springboard for undergraduates to pursue further training and career opportunities. </p>
+
+    <p>The project takes an early-and-often, module-driven approach to curricular integration. A collection of modules is being designed to cover a range of heterogeneous computing concepts including heterogeneous architectures, hybrid algorithms, and heterogeneous programming models such as CUDA and OpenCL. For easy adoption, modules are designed to be self-contained with all requisite teaching material including in-class interactive exercises, problem sets and solutions, and pedagogical notes. Each module is designed to exploit heterogeneous context within the curriculum and introduce topics at an appropriate level of abstraction. The summer training camps are designed to be immersive experiences for undergraduates that (i) reinforce and extend the material covered in the modules, (ii) present the role of cyberinfrastructure in advancing scientific research, and (iii) expose students to opportunities in the fields of computational and data science. A key component of this project is forging alliances with industry partners, who are engaged throughout the design process. A detailed evaluation plan is in place to evaluate student learning outcomes and engagement. Both internal and external evaluators are involved in carrying out the evaluation plan. The modules and training activities are expected to impact over 1,100 computer science undergraduates enrolled at Texas State, Knox College, and Concordia University Texas. Extensive dissemination efforts through faculty training workshops are expected to further broaden the impact of this work.
+    </p>
+    </div>
+  </div>
+
+  <!-- Container
+  <div class="w3-container" style="position:relative">
+    <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+    style="position:absolute;top:-28px;right:24px">+</a>
+  </div>
+-->
+  <!--
+
+  <div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+  <h2>PRICING</h2>
+  <p>Choose a pricing plan that fits your needs.</p><br>
+  <div class="w3-third w3-margin-bottom">
+  <ul class="w3-ul w3-border w3-hover-shadow">
+  <li class="w3-theme">
+  <p class="w3-xlarge">Basic</p>
+</li>
+<li class="w3-padding-16"><b>10GB</b> Storage</li>
+<li class="w3-padding-16"><b>10</b> Emails</li>
+<li class="w3-padding-16"><b>10</b> Domains</li>
+<li class="w3-padding-16"><b>Endless</b> Support</li>
+<li class="w3-padding-16">
+<h2 class="w3-wide"><i class="fa fa-usd"></i> 10</h2>
+<span class="w3-opacity">per month</span>
+</li>
+<li class="w3-theme-l5 w3-padding-24">
+<button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+</li>
+</ul>
+</div>
+
+<div class="w3-third w3-margin-bottom">
+<ul class="w3-ul w3-border w3-hover-shadow">
+<li class="w3-theme-l2">
+<p class="w3-xlarge">Pro</p>
+</li>
+<li class="w3-padding-16"><b>25GB</b> Storage</li>
+<li class="w3-padding-16"><b>25</b> Emails</li>
+<li class="w3-padding-16"><b>25</b> Domains</li>
+<li class="w3-padding-16"><b>Endless</b> Support</li>
+<li class="w3-padding-16">
+<h2 class="w3-wide"><i class="fa fa-usd"></i> 25</h2>
+<span class="w3-opacity">per month</span>
+</li>
+<li class="w3-theme-l5 w3-padding-24">
+<button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+</li>
+</ul>
+</div>
+
+<div class="w3-third w3-margin-bottom">
+<ul class="w3-ul w3-border w3-hover-shadow">
+<li class="w3-theme">
+<p class="w3-xlarge">Premium</p>
+</li>
+<li class="w3-padding-16"><b>50GB</b> Storage</li>
+<li class="w3-padding-16"><b>50</b> Emails</li>
+<li class="w3-padding-16"><b>50</b> Domains</li>
+<li class="w3-padding-16"><b>Endless</b> Support</li>
+<li class="w3-padding-16">
+<h2 class="w3-wide"><i class="fa fa-usd"></i> 50</h2>
+<span class="w3-opacity">per month</span>
+</li>
+<li class="w3-theme-l5 w3-padding-24">
+<button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+</li>
+</ul>
+</div>
+</div>
+-->
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-16 w3-theme-l5" id="contact">
+  <div><span class="w3-xlarge w3-border-purple w3-bottombar">Contact Us</span></div>
+  <p>If you need more information about our project please feel free to contact us</p>
+
+<a id="bunde">
+  <div class="w3-third">
+    <div class="w3-card w3-hover-shadow w3-white w3-margin-top w3-margin-right">
+      <div class="w3-container">
+        <h3>David Bunde</h3>
+        <h4>Knox College</h4>
+        <p><i class="fa fa-map-marker w3-text-brown w3-xlarge"></i>  Galesburg - IL</p>
+        <!--<p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>-->
+        <p><i class="fa fa-envelope-o w3-text-brown w3-xlarge"></i> dbunde@knox.edu</p>
+      </div>
+    </div>
+  </div>
+</a>
+
+<a id="apan">
+  <div class="w3-third">
+    <div class="w3-card w3-hover-shadow w3-white w3-margin-top w3-margin-right">
+      <div class="w3-container">
+        <h3>Apan Qasem</h3>
+        <h4>Texas State University</h4>
+        <p><i class="fa fa-map-marker w3-text-brown w3-xlarge"></i>  San Marcos - TX</p>
+        <!--<p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>-->
+        <p><i class="fa fa-envelope-o w3-text-brown w3-xlarge"></i> apan@txstate.edu</p>
+      </div>
+    </div>
+  </div>
+</a>
+
+<a id="phil">
+  <div class="w3-third">
+    <div class="w3-card w3-hover-shadow w3-white w3-margin-top">
+      <div class="w3-container">
+        <h3>Philip Schielke</h3>
+        <h4>Concordia University Texas</h4>
+        <p><i class="fa fa-map-marker w3-text-brown w3-xlarge"></i>  Austin - TX</p>
+        <!--<p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>-->
+        <p><i class="fa fa-envelope-o w3-text-brown w3-xlarge"></i> philip.schielke@concordia.edu</p>
+      </div>
+    </div>
+  </div>
+</a>
+
+</div>
+<!--
+<div class="w3-col m7">
+<form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+<div class="w3-section">
+<label>Name</label>
+<input class="w3-input" type="text" name="Name" required>
+</div>
+<div class="w3-section">
+<label>Email</label>
+<input class="w3-input" type="text" name="Email" required>
+</div>
+<div class="w3-section">
+<label>Message</label>
+<input class="w3-input" type="text" name="Message" required>
+</div>
+<input class="w3-check" type="checkbox" checked name="Like">
+<label>I Like it!</label>
+<button type="submit" class="w3-button w3-right w3-theme">Send</button>
+</form>
+</div>
+</div>
+-->
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Work supported by NSF grants OAC-1829644 & OAC-1829554</h4>
+  <img src="nsf-logo.png" style="width: 25%">
+  <!-- Buttons for social media
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+-->
+</footer>
+
+<script>
+
+$('#knox').attr('href', 'https://www.knox.edu/academics/majors-and-minors/computer-science');
+$('#tsu').attr('href', 'https://cs.txstate.edu');
+$('#conc').attr('href', 'https://www.concordia.edu/academics/school-of-natural-and-applied-sciences/computer-science.html');
+
+$('#bunde').attr('href', 'http://faculty.knox.edu/dbunde');
+$('#apan').attr('href', 'https://userweb.cs.txstate.edu/~aq10/');
+$('#phil').attr('href', 'https://www.concordia.edu/blog/authors/philip-schielke.html');
+
+/*
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+*/
+</script>
+</div>
+</body>
+</html>
